@@ -7,7 +7,7 @@ from langchain_community.vectorstores import Chroma
 from langchain.text_splitter import CharacterTextSplitter
 import os
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Initialize Groq LLM
 groq_api_key = os.environ.get('GROQ_API_KEY')
